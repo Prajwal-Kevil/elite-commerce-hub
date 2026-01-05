@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation, Outlet } from "react-router-dom";
+import { Link, useLocation, Outlet, useNavigate } from "react-router-dom";
 import {
   LayoutDashboard,
   Package,
@@ -13,13 +13,21 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useStore } from "@/lib/store";
+import { useAuth } from "@/lib/auth";
 
 const AdminLayout = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const messages = useStore((state) => state.messages);
+  const { logout, user } = useAuth();
 
   const unreadMessages = messages.filter((m) => !m.isRead).length;
+
+  const handleLogout = () => {
+    logout();
+    navigate("/auth");
+  };
 
   const navItems = [
     { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
@@ -99,13 +107,24 @@ const AdminLayout = () => {
           </nav>
 
           {/* Footer */}
-          <div className="p-4 border-t border-sidebar-border">
+          <div className="p-4 border-t border-sidebar-border space-y-2">
+            {user && (
+              <p className="text-xs text-muted-foreground px-4 truncate">{user.email}</p>
+            )}
             <Link to="/">
               <Button variant="ghost" className="w-full justify-start text-muted-foreground">
                 <LogOut className="h-4 w-4 mr-3" />
                 Back to Store
               </Button>
             </Link>
+            <Button
+              variant="ghost"
+              className="w-full justify-start text-destructive hover:text-destructive hover:bg-destructive/10"
+              onClick={handleLogout}
+            >
+              <LogOut className="h-4 w-4 mr-3" />
+              Sign Out
+            </Button>
           </div>
         </div>
       </aside>
