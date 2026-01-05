@@ -50,7 +50,7 @@ const AdminLayout = () => {
       <header className="lg:hidden fixed top-0 left-0 right-0 z-50 glass h-16 flex items-center justify-between px-4">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-            <span className="font-display font-bold text-primary-foreground text-sm">N</span>
+            <span className="font-display font-bold text-primary-foreground text-xs">SR</span>
           </div>
           <span className="font-display text-lg font-bold text-primary">ADMIN</span>
         </div>
@@ -73,9 +73,9 @@ const AdminLayout = () => {
           {/* Logo */}
           <div className="h-16 flex items-center gap-2 px-6 border-b border-sidebar-border">
             <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="font-display font-bold text-primary-foreground text-sm">N</span>
+              <span className="font-display font-bold text-primary-foreground text-xs">SR</span>
             </div>
-            <span className="font-display text-lg font-bold text-primary">ADMIN PANEL</span>
+            <span className="font-display text-lg font-bold text-primary">SILKROAD ADMIN</span>
           </div>
 
           {/* Navigation */}
