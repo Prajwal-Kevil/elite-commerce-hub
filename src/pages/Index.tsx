@@ -186,7 +186,7 @@ const Index = () => {
                 Ready to <span className="text-primary glow-text">Level Up</span>?
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
-                Join thousands of satisfied customers and discover why NEXUS is the ultimate destination for premium tech.
+                Join thousands of satisfied customers and discover why Silkroad 4.0 is the ultimate destination for premium products.
               </p>
               <Link to="/products">
                 <Button variant="hero" size="xl">

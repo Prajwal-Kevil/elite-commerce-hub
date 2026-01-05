@@ -10,14 +10,14 @@ export const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-                <span className="font-display font-bold text-primary-foreground">N</span>
+                <span className="font-display font-bold text-primary-foreground text-sm">SR</span>
               </div>
               <span className="font-display text-xl font-bold text-primary glow-text">
-                NEXUS
+                SILKROAD 4.0
               </span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Premium tech products for the modern lifestyle. Quality meets innovation.
+              Your trusted marketplace for premium products. Quality and innovation.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-muted-foreground text-sm">
                 <Mail className="h-4 w-4 text-primary" />
-                support@nexus.com
+                support@silkroad4.com
               </li>
               <li className="flex items-center gap-2 text-muted-foreground text-sm">
                 <Phone className="h-4 w-4 text-primary" />
@@ -87,7 +87,7 @@ export const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} NEXUS. All rights reserved.
+            © {new Date().getFullYear()} SILKROAD 4.0. All rights reserved.
           </p>
         </div>
       </div>
