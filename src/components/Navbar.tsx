@@ -61,11 +61,6 @@ export const Navbar = () => {
               </Button>
             </Link>
 
-            <Link to="/admin" className="hidden md:block">
-              <Button variant="outline" size="sm">
-                Admin
-              </Button>
-            </Link>
 
             {/* Mobile Menu Button */}
             <Button
@@ -97,11 +92,6 @@ export const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <Link to="/admin" onClick={() => setIsMenuOpen(false)}>
-                <Button variant="outline" size="sm" className="w-full">
-                  Admin Panel
-                </Button>
-              </Link>
             </div>
           </div>
         )}

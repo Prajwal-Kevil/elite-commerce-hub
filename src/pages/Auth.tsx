@@ -183,11 +183,6 @@ const Auth = () => {
           </div>
         </div>
 
-        <p className="text-center text-muted-foreground text-sm mt-6">
-          <a href="/" className="hover:text-primary transition-colors">
-            ← Back to Store
-          </a>
-        </p>
       </div>
     </div>
   );
