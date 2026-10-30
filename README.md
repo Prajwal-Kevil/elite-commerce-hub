@@ -1,5 +1,8 @@
 # Welcome to your Lovable project
 
+> **Roventis Technologies** — maintained by [Prajwal C](https://github.com/Prajwal-Kevil). See [`ROVENTIS_STANDARDS.md`](ROVENTIS_STANDARDS.md) for repository, safety, and contribution standards.
+
+
 ## Project info
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
